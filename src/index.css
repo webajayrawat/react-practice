@@ -3,6 +3,7 @@
 /* =========================================
    GLOBAL
 ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -21,9 +22,36 @@ h6 {
 
 body {
     background: #0d0e12;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #fff;
     min-height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+        margin: 1rem 0;
+    }
+}
+
+.dark {
+    background: #0d0e12;
+}
+
+.light {
+    background: #fff;
+    color: #0c0d12;
+
+    h1 {
+        color: #0c0d12;
+    }
 }
 
 /* =========================================
@@ -759,5 +787,19 @@ body {
 
     .queue-item button {
         width: 100%;
+    }
+}
+
+
+.user-card {
+    background: #1a1a1a;
+    border: 1px solid #2d2d2d;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 16px;
+    font-size: 0.77rem;
+
+    p {
+        margin: 5px 0;
     }
 }
