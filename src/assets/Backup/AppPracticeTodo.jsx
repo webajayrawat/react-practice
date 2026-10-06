@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import PageOne from './assets/Practice/PageOne'
-import PageTwo from './assets/Practice/PageTwo'
+import PageOne from '../Practice/PageOne'
+import PageTwo from '../Practice/PageTwo'
 
 const App = () => {
 

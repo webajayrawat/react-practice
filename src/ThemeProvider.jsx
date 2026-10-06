@@ -2,11 +2,11 @@ import { useState } from "react";
 import ThemeContext from "./ThemeContext";
 
 const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("dark");
 
     const toggleTheme = () => {
         setTheme((prevTheme) =>
-            prevTheme === "light" ? "dark" : "light"
+            prevTheme === "dark" ? "light" : "dark"
         );
         console.log(
             theme,
@@ -14,14 +14,14 @@ const ThemeProvider = ({ children }) => {
         )
     };
 
-    const value = {
+    const valueData = {
         theme,
         toggleTheme,
         isDark: theme === "dark",
     };
 
     return (
-        <ThemeContext.Provider value={value}>
+        <ThemeContext.Provider value={valueData}>
             {children}
         </ThemeContext.Provider>
     );

@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 // import Map from './assets/Components/Map'
 // import Header from './assets/Components/Header'
 // import QuequeForm from './assets/Components/QuequeForm'
-import FormComponent from './assets/Components/FormComponent'
-import FormComponentData from './assets/Components/FormComponentData';
+import FormComponent from '../Components/FormComponent'
+import FormComponentData from '../Components/FormComponentData';
 function App() {
   // Load queue from localStorage when the app starts
   const [queue, setQueue] = useState(() => {
